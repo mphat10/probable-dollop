@@ -5,6 +5,7 @@ def function():
 		if len(w) not in d:
 			d[len(w)]=w
 		elif len(w) in d:
-			d.update({"key":w})
+			d.update({len(w):w})
 	return d
+
 print(function())
